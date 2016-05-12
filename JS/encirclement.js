@@ -10,7 +10,11 @@ function init() {
     var boardD = 120;
     var raycaster = new THREE.Raycaster();
     var mouse = new THREE.Vector2();
+    var chessArr, chessBoard;
     var objects = [];
+    var tween;
+    var playerRole, enemyRole;
+    var playerNowCheck, enemyNowCheck;
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -42,6 +46,8 @@ function init() {
 
         requestAnimationFrame(render);
         renderer.render(scene, camera);
+
+        TWEEN.update();
     }
 
     //创建灯光
@@ -67,13 +73,13 @@ function init() {
     //创建棋盘
     function createChessBoard() {
         //棋盘group
-        var chessBoard = new THREE.Group();
+        chessBoard = new THREE.Group();
         //棋盘底
         var cubeGeo = new THREE.BoxGeometry(boardW, boardH, boardD, 1, 1, 1);
         var cubeTexture = new THREE.ImageUtils.loadTexture("Pic/wood-2.jpg");
         var cubeMesh = new THREE.Mesh(cubeGeo, new THREE.MeshPhongMaterial({map: cubeTexture}));
         //棋盘面
-        var chessArr = [];
+        chessArr = [];
         for (var i = 0; i < 17; i++) {
             var LineH = [];
             if (i % 2 == 0) {
@@ -122,11 +128,13 @@ function init() {
             }
         }
         //创建玩家角色
-        var playerRole = getCharacter(0);
+        playerRole = getCharacter(0);
         playerRole.position.set(chessArr[16][8].position.x, 7, chessArr[16][8].position.z);
+        playerNowCheck = chessArr[16][8];
         //创建敌人角色
-        var enemyRole = getCharacter(1);
+        enemyRole = getCharacter(1);
         enemyRole.position.set(chessArr[0][8].position.x, 7, chessArr[0][8].position.z);
+        enemyNowCheck = chessArr[0][8];
 
         chessBoard.add(cubeMesh);
         scene.add(chessBoard);
@@ -191,7 +199,7 @@ function init() {
     }
 
     //响应鼠标移动事件
-    function onDocumentMouseMove(event){
+    function onDocumentMouseMove(event) {
         event.preventDefault();
         mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
         mouse.y = -( event.clientY / window.innerHeight ) * 2 + 1;
@@ -205,16 +213,41 @@ function init() {
         if (intersects.length > 0) {
             orbitControls.enabled = false;
             if (intersects[0].object.name == "check") {
-                window.document.getElementById("WebGL-output").style.cursor = 'move';
+                //window.document.getElementById("WebGL-output").style.cursor = 'move';
+                //判断是否符合移动规则
+                //TODO
+                tween = new TWEEN.Tween(playerRole.position)
+                    .to({
+                        x: intersects[0].object.position.x,
+                        y: playerRole.position.y,
+                        z: intersects[0].object.position.z
+                    })
+                    .delay(0)
+                    .easing(TWEEN.Easing.Linear.None);
+                // .onUpdate(tweenUpdate);
+                tween.start();
+                // intersects[0].object.parent.
+                chessArr.forEach(function (e) {
+                        if (e.indexOf(intersects[0]) !== -1) {
+                            console.log("hehe");
+                        }
+                    }
+                )
             }
         }
     }
+
     //鼠标抬起事件
-    function onDocumentMouseUp(event){
+    function onDocumentMouseUp(event) {
         event.preventDefault();
         orbitControls.enabled = true;
-        window.document.getElementById("WebGL-output").style.cursor = 'pointer';
+        //window.document.getElementById("WebGL-output").style.cursor = 'pointer';
     }
+
+    // 补间动画回调
+    // function tweenUpdate(){
+    //
+    // }
 }
 
 window.onload = init();
