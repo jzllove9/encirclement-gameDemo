@@ -14,6 +14,7 @@ function init() {
     var chessArr = [];
     var playerNowCheck, enemyNowCheck;
     var playerRole, enemyRole;
+    var clickState = 1;
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -28,9 +29,17 @@ function init() {
     var orbitControls = new THREE.OrbitControls(camera);
     var clock = new THREE.Clock();
 
-    var controls = new function(){
-        this.move = true;
-        this.addO
+    var controls = new function () {
+        this.move = function () {
+            if (clickState == 1) {
+                clickState = 0;
+            }
+        };
+        this.addObs = function () {
+            if (clickState == 0) {
+                clickState = 1;
+            }
+        };
     };
 
     createLights();
@@ -97,7 +106,7 @@ function init() {
                     } else {
                         var gapH = getGap(1);
                         gapH.position.set(-45 + checkW * (j + 1) / 2 + j,
-                            0,
+                            3,
                             -45 + checkD * (i + 1) / 2 + i);
                         chessBoard.add(gapH);
                         LineH.push(gapH);
@@ -111,13 +120,13 @@ function init() {
                     if (j % 2 == 0) {
                         var gapV = getGap(2);
                         gapV.position.set(-45 + checkW / 2 + checkW * j / 2 + j,
-                            0,
+                            3,
                             -45 + checkD / 2 + checkD * i / 2 + i);
                         chessBoard.add(gapV);
                         LineH.push(gapV);
                         objects.push(gapV);
                     } else {
-                        var obstacle = getObstacle();
+                        var obstacle = getMidGap();
                         obstacle.position.set(-45 + checkW * (j + 1) / 2 + j,
                             0,
                             -45 + checkD / 2 + checkD * i / 2 + i);
@@ -156,23 +165,23 @@ function init() {
     function getGap(type) {
         if (type == 1) {
             //竖向
-            var gap = new THREE.Mesh(new THREE.BoxGeometry(2, checkH, checkD),
+            var gap = new THREE.Mesh(new THREE.BoxGeometry(2, 2, checkD),
                 new THREE.MeshPhongMaterial({color: 0x00ffff, transparent: true, opacity: 0.3}));
             gap.name = "gap";
         } else {
             //横向
-            var gap = new THREE.Mesh(new THREE.BoxGeometry(checkW, checkH, 2),
+            var gap = new THREE.Mesh(new THREE.BoxGeometry(checkW, 2, 2),
                 new THREE.MeshPhongMaterial({color: 0x00ffff, transparent: true, opacity: 0.3}));
             gap.name = "gap";
         }
         return gap;
     }
 
-    //创建障碍
-    function getObstacle() {
+    //创建中间缝隙
+    function getMidGap() {
         var obstacle = new THREE.Mesh(new THREE.BoxGeometry(2, checkH, 2),
             new THREE.MeshPhongMaterial({color: 0xffff00, transparent: true, opacity: 0.3}));
-        obstacle.name = "obstacle";
+        obstacle.name = "midGap";
         return obstacle;
     }
 
@@ -193,6 +202,22 @@ function init() {
         return role;
     }
 
+    //创建阻碍 0为横着 1为竖着
+    function getObstacle(type) {
+        if (type == 0) {
+            var obstacleMat = new THREE.MeshPhongMaterial({color: 0xffff00});
+            var obstacleGeo = new THREE.BoxGeometry(18, 6 + checkH, 2);
+            var obstacle = new THREE.Mesh(obstacleGeo, obstacleMat);
+        } else {
+            var obstacleMat = new THREE.MeshPhongMaterial({color: 0xffff00});
+            var obstacleGeo = new THREE.BoxGeometry(2, 6 + checkH, 18);
+            var obstacle = new THREE.Mesh(obstacleGeo, obstacleMat);
+        }
+        obstacle.name = "obstacle";
+        scene.add(obstacle);
+        return obstacle;
+    }
+
     //创建监听器
     function createListener() {
         renderer.domElement.addEventListener('mousemove', onDocumentMouseMove, false);
@@ -200,6 +225,7 @@ function init() {
         renderer.domElement.addEventListener('mouseup', onDocumentMouseUp, false);
     }
 
+    var obs;
     //响应鼠标移动事件
     function onDocumentMouseMove(event) {
         event.preventDefault();
@@ -214,7 +240,8 @@ function init() {
         var intersects = raycaster.intersectObjects(objects);
         if (intersects.length > 0) {
             orbitControls.enabled = false;
-            if (intersects[0].object.name == "check") {
+            //如果点击状态为move（0）且点击目标为可移动方块
+            if (clickState == 0 && intersects[0].object.name == "check") {
                 chessArr.forEach(function (e) {
                     var clickX = e.indexOf(intersects[0].object);
                     var clickY = chessArr.indexOf(e);
@@ -234,6 +261,36 @@ function init() {
                     }
                 });
             }
+            //如果点击状态为obstacle(1) 且点击目标为可添加阻碍方块
+            else if (clickState == 1 && intersects[0].object.name == "gap") {
+                //添加阻碍
+                if (intersects.length > 0) {
+                    orbitControls.enabled = false;
+                    chessArr.forEach(function (e) {
+                        var clickX = e.indexOf(intersects[0].object);
+                        var clickY = chessArr.indexOf(e);
+
+                        if (clickX == -1) return;
+                        if (clickY % 2 == 0) {
+                            //竖的
+                            obs = getObstacle(1);
+                            if (clickY != 16) {
+                                obs.position.copy(chessArr[clickY + 1][clickX].position);
+                            } else {
+                                obs.position.copy(chessArr[clickY - 1][clickX].position);
+                            }
+                        } else {
+                            //横的
+                            obs = getObstacle(0);
+                            if (clickX != 16) {
+                                obs.position.copy(chessArr[clickY][clickX + 1].position);
+                            } else {
+                                obs.position.copy(chessArr[clickY][clickX - 1].position);
+                            }
+                        }
+                    })
+                }
+            }
         }
     }
 
@@ -246,5 +303,3 @@ function init() {
 }
 
 window.onload = init();
-
-

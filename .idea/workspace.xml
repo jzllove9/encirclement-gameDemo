@@ -34,15 +34,16 @@
       <file leaf-file-name="encirclement.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="376">
+              <caret line="278" column="36" selection-start-line="278" selection-start-column="36" selection-end-line="278" selection-end-column="36" />
               <folding>
                 <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-                <element signature="e#2518#4479#0" expanded="false" />
+                <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-                <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="e#8710#9712#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -225,15 +226,15 @@
       <workItem from="1463363484732" duration="91000" />
       <workItem from="1463363589240" duration="68000" />
       <workItem from="1463363674201" duration="73000" />
-      <workItem from="1463363782401" duration="4047000" />
+      <workItem from="1463363782401" duration="11596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32188000" />
+    <option name="totallyTimeSpent" value="39737000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14950635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -259,7 +260,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -278,11 +279,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#2518#4479#0" expanded="false" />
+            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#8710#9712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -301,11 +303,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#2518#4479#0" expanded="false" />
+            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#8710#9712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -324,11 +327,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#2518#4479#0" expanded="false" />
+            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#8710#9712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -347,11 +351,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#2518#4479#0" expanded="false" />
+            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#8710#9712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -370,11 +375,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#2518#4479#0" expanded="false" />
+            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#8710#9712#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -383,14 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/three.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="8443" column="8" selection-start-line="8443" selection-start-column="8" selection-end-line="8443" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -410,6 +408,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="8825" column="4" selection-start-line="8825" selection-start-column="4" selection-end-line="8825" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -420,15 +426,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="376">
+          <caret line="278" column="36" selection-start-line="278" selection-start-column="36" selection-end-line="278" selection-end-column="36" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#2518#4479#0" expanded="false" />
+            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#8710#9712#0" expanded="false" />
           </folding>
         </state>
       </provider>
