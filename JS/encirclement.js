@@ -42,6 +42,10 @@ function init() {
         };
     };
 
+    var gui = new dat.GUI();
+    gui.add(controls,"move");
+    gui.add(controls, "addObs");
+
     createLights();
     createChessBoard();
     createListener();
@@ -205,12 +209,12 @@ function init() {
     //创建阻碍 0为横着 1为竖着
     function getObstacle(type) {
         if (type == 0) {
-            var obstacleMat = new THREE.MeshPhongMaterial({color: 0xffff00});
-            var obstacleGeo = new THREE.BoxGeometry(18, 6 + checkH, 2);
+            var obstacleMat = new THREE.MeshPhongMaterial({color: 0xffff00, shininess: 100});
+            var obstacleGeo = new THREE.BoxGeometry(18, 5, 2);
             var obstacle = new THREE.Mesh(obstacleGeo, obstacleMat);
         } else {
             var obstacleMat = new THREE.MeshPhongMaterial({color: 0xffff00});
-            var obstacleGeo = new THREE.BoxGeometry(2, 6 + checkH, 18);
+            var obstacleGeo = new THREE.BoxGeometry(2, 5, 18);
             var obstacle = new THREE.Mesh(obstacleGeo, obstacleMat);
         }
         obstacle.name = "obstacle";
@@ -290,6 +294,7 @@ function init() {
                         }
                     })
                 }
+                obs.position.y += checkH - 1;
             }
         }
     }
