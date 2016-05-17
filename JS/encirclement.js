@@ -14,13 +14,16 @@ function init() {
     var chessArr = [];
     var playerNowCheck, enemyNowCheck;
     var playerRole, enemyRole;
-    var clickState = 1;
+    var clickState = 0;
 
     var scene = new THREE.Scene();
+    var sceneBG = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.x = 0;
     camera.position.y = 100;
     camera.position.z = 100;
+    var cameraBG = new THREE.OrthographicCamera(-window.innerWidth, window.innerWidth, window.innerHeight, -window.innerHeight, -10000, 10000);
+    cameraBG.position.z = 50;
 
     var renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
@@ -28,6 +31,15 @@ function init() {
 
     var orbitControls = new THREE.OrbitControls(camera);
     var clock = new THREE.Clock();
+
+    var materialColor = new THREE.MeshBasicMaterial({
+        map: THREE.ImageUtils.loadTexture("Pic/galaxy.jpg"),
+        depthTest: false
+    });
+    var bgPlane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), materialColor);
+    bgPlane.position.z = -100;
+    bgPlane.scale.set(window.innerWidth * 2, window.innerHeight * 2, 1);
+    sceneBG.add(bgPlane);
 
     var controls = new function () {
         this.move = function () {
@@ -43,7 +55,7 @@ function init() {
     };
 
     var gui = new dat.GUI();
-    gui.add(controls,"move");
+    gui.add(controls, "move");
     gui.add(controls, "addObs");
 
     createLights();
@@ -52,11 +64,25 @@ function init() {
 
 
     window.document.getElementById("WebGL-output").appendChild(renderer.domElement);
+    var bgPass = new THREE.RenderPass(sceneBG, cameraBG);
+    var scenePass = new THREE.RenderPass(scene, camera);
+    scenePass.clear = false;
+
+    var effectCopy = new THREE.ShaderPass(THREE.CopyShader);
+    effectCopy.renderToScreen = true;
+
+    var composer = new THREE.EffectComposer(renderer);
+    composer.renderTarget1.stencilBuffer = true;
+    composer.renderTarget2.stencilBuffer = true;
+    composer.addPass(bgPass);
+    composer.addPass(scenePass);
+    composer.addPass(effectCopy);
 
     render();
 
     //update
     function render() {
+        renderer.autoClear = false;
         //控制摄像机
         var delta = clock.getDelta();
         orbitControls.update(delta);
@@ -64,6 +90,7 @@ function init() {
         requestAnimationFrame(render);
         renderer.render(scene, camera);
         TWEEN.update();
+        composer.render(delta);
     }
 
     //创建灯光
@@ -92,8 +119,13 @@ function init() {
         var chessBoard = new THREE.Group();
         //棋盘底
         var cubeGeo = new THREE.BoxGeometry(boardW, boardH, boardD, 1, 1, 1);
-        var cubeTexture = new THREE.ImageUtils.loadTexture("Pic/wood-2.jpg");
-        var cubeMesh = new THREE.Mesh(cubeGeo, new THREE.MeshPhongMaterial({map: cubeTexture}));
+        // var cubeTexture = new THREE.ImageUtils.loadTexture("Pic/blue2.jpg");
+        var cubeMesh = new THREE.Mesh(cubeGeo, new THREE.MeshPhongMaterial({
+            // map: cubeTexture,
+            color: 0x0000ff,
+            transparent: true,
+            opacity: 0.3
+        }));
         //棋盘面
         for (var i = 0; i < 17; i++) {
             var LineH = [];
@@ -132,7 +164,7 @@ function init() {
                     } else {
                         var obstacle = getMidGap();
                         obstacle.position.set(-45 + checkW * (j + 1) / 2 + j,
-                            0,
+                            3,
                             -45 + checkD / 2 + checkD * i / 2 + i);
                         chessBoard.add(obstacle);
                         LineH.push(obstacle);
@@ -159,7 +191,7 @@ function init() {
 
     //创建格子
     function getCheck() {
-        var checkMat = new THREE.MeshLambertMaterial({color: 0x000000, transparent: true, opacity: 0.8});
+        var checkMat = new THREE.MeshLambertMaterial({color: 0x0033CC, transparent: true, opacity: 0.8});
         var check = new THREE.Mesh(new THREE.BoxGeometry(checkW, checkH, checkD, 1, 1, 1), checkMat);
         check.name = "check";
         return check;
@@ -169,13 +201,13 @@ function init() {
     function getGap(type) {
         if (type == 1) {
             //竖向
-            var gap = new THREE.Mesh(new THREE.BoxGeometry(2, 2, checkD),
-                new THREE.MeshPhongMaterial({color: 0x00ffff, transparent: true, opacity: 0.3}));
+            var gap = new THREE.Mesh(new THREE.BoxGeometry(2, 1, checkD),
+                new THREE.MeshBasicMaterial({color: 0xBFE3FE, transparent: true, opacity: 0.5}));
             gap.name = "gap";
         } else {
             //横向
-            var gap = new THREE.Mesh(new THREE.BoxGeometry(checkW, 2, 2),
-                new THREE.MeshPhongMaterial({color: 0x00ffff, transparent: true, opacity: 0.3}));
+            var gap = new THREE.Mesh(new THREE.BoxGeometry(checkW, 1, 2),
+                new THREE.MeshBasicMaterial({color: 0xBFE3FE, transparent: true, opacity: 0.5}));
             gap.name = "gap";
         }
         return gap;
@@ -183,8 +215,8 @@ function init() {
 
     //创建中间缝隙
     function getMidGap() {
-        var obstacle = new THREE.Mesh(new THREE.BoxGeometry(2, checkH, 2),
-            new THREE.MeshPhongMaterial({color: 0xffff00, transparent: true, opacity: 0.3}));
+        var obstacle = new THREE.Mesh(new THREE.BoxGeometry(2, 1, 2),
+            new THREE.MeshBasicMaterial({color: 0xBFE3FE, transparent: true, opacity: 0.9}));
         obstacle.name = "midGap";
         return obstacle;
     }
@@ -249,8 +281,16 @@ function init() {
                 chessArr.forEach(function (e) {
                     var clickX = e.indexOf(intersects[0].object);
                     var clickY = chessArr.indexOf(e);
-                    if ((Math.abs(clickX - playerNowCheck.x) == 2 && (clickY == playerNowCheck.y)) ||
-                        (Math.abs(clickY - playerNowCheck.y) == 2 && (clickX == playerNowCheck.x))) {
+                    var offX = clickX - playerNowCheck.x;
+                    var offY = clickY - playerNowCheck.y;
+                    //判断是否横竖向移动且判断是否有障碍物阻拦
+                    if ((Math.abs(offX) == 2 && (clickY == playerNowCheck.y)) ||
+                        (Math.abs(offY) == 2 && (clickX == playerNowCheck.x))) {
+                        if (offX > 0 && chessArr[clickY][clickX - 1].isObs == true) return;
+                        if (offX < 0 && chessArr[clickY][clickX + 1].isObs == true) return;
+                        if (offY > 0 && chessArr[clickY - 1][clickX].isObs == true) return;
+                        if (offY < 0 && chessArr[clickY + 1][clickX].isObs == true) return;
+
                         var tween = new TWEEN.Tween(playerRole.position)
                             .to({
                                 x: intersects[0].object.position.x,
@@ -280,21 +320,29 @@ function init() {
                             obs = getObstacle(1);
                             if (clickY != 16) {
                                 obs.position.copy(chessArr[clickY + 1][clickX].position);
+                                chessArr[clickY][clickX].isObs = true;
+                                chessArr[clickY + 2][clickX].isObs = true;
                             } else {
                                 obs.position.copy(chessArr[clickY - 1][clickX].position);
+                                chessArr[clickY - 2][clickX].isObs = true;
+                                chessArr[clickY][clickX].isObs = true;
                             }
                         } else {
                             //横的
                             obs = getObstacle(0);
                             if (clickX != 16) {
                                 obs.position.copy(chessArr[clickY][clickX + 1].position);
+                                chessArr[clickY][clickX + 2].isObs = true;
+                                chessArr[clickY][clickX].isObs = true;
                             } else {
                                 obs.position.copy(chessArr[clickY][clickX - 1].position);
+                                chessArr[clickY][clickX - 2].isObs = true;
+                                chessArr[clickY][clickX].isObs = true;
                             }
                         }
                     })
                 }
-                obs.position.y += checkH - 1;
+                obs.position.y = (checkH + obs.geometry.parameters.height) / 2;
             }
         }
     }
