@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyFirstGame - Demo</title>
+    <title>围追堵截小游戏 @by JZL</title>
+    <link rel="stylesheet" href="CSS/myStyle.css" type="text/css">
     <script type="application/javascript" src="JS/three.js"></script>
     <script type="application/javascript" src="JS/OrbitControls.js"></script>
     <script type="application/javascript" src="JS/Tween.js"></script>
@@ -13,18 +14,36 @@
     <script type="application/javascript" src="JS/EffectComposer.js"></script>
     <script type="application/javascript" src="JS/MaskPass.js"></script>
     <script type="application/javascript" src="JS/RenderPass.js"></script>
-    <style>
-        body {
-            /*全屏*/
-            margin: 0;
-            overflow: hidden;
-        }
-    </style>
 </head>
 <body>
-<div id="WebGL-output"></div>
+<!--UI标签-->
+<div id="warpper">
+    <audio id="muiscUI" controls autoplay="autoplay">
+        <source src="Music/Living.mp3"/>
+    </audio>
 
+    <div id="winUI">
+        <img src="Pic/win2.jpg"/>
+    </div>
+
+    <div id="loseUI">
+        <img src="Pic/lose.jpg"/>
+    </div>
+
+    <div id="foulUI">
+        <img src="Pic/foul.jpg"/>
+    </div>
+
+    <div id="WebGL-output"></div>
+
+    <div id="buttonUI">
+        <a href="#" class="myButton" onclick="movePlayer()">移动</a>
+        <a href="#" class="myButton" onclick="addObs()">阻挡</a>
+    </div>
+</div>
 <!--自定义脚本文件-->
+<script type="application/javascript" src="JS/FindPath.js"></script>
 <script type="application/javascript" src="JS/encirclement.js"></script>
+
 </body>
 </html>

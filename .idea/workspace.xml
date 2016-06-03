@@ -24,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+            <state relative-caret-position="365">
+              <caret line="40" column="62" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -34,19 +34,32 @@
       <file leaf-file-name="encirclement.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="354" column="5" selection-start-line="354" selection-start-column="5" selection-end-line="354" selection-end-column="5" />
+            <state relative-caret-position="5106">
+              <caret line="409" column="25" selection-start-line="409" selection-start-column="25" selection-end-line="409" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-                <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-                <element signature="e#4094#6053#0" expanded="false" />
+                <element signature="e#3728#4127#0" expanded="false" />
+                <element signature="e#4185#4482#0" expanded="false" />
+                <element signature="e#4520#4817#0" expanded="false" />
+                <element signature="e#4973#5102#0" expanded="false" />
+                <element signature="e#5157#7116#0" expanded="false" />
                 <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
                 <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-                <element signature="e#10043#11531#0" expanded="false" />
-                <element signature="e#11655#13587#0" expanded="false" />
+                <element signature="e#9603#9840#0" expanded="false" />
+                <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="e#11830#13129#0" expanded="false" />
+                <element signature="e#16144#17027#0" expanded="false" />
+                <element signature="e#17240#18015#0" expanded="false" />
+                <element signature="e#19924#20410#0" expanded="false" />
+                <element signature="e#20465#20939#0" expanded="false" />
+                <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+                <element signature="e#21188#22685#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,6 +79,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/JS/dat.gui.js" />
+        <option value="$PROJECT_DIR$/JS/FindPath.js" />
+        <option value="$PROJECT_DIR$/CSS/myStyle.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/JS/encirclement.js" />
       </list>
@@ -77,8 +92,32 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JSUnusedAssignment</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -105,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,19 +191,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="encirclement-gameDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="encirclement-gameDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../three.js-master" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PrjFloder\WebStrom\encirclement-gameDemo\Music" />
+      <recent name="E:\PrjFloder\WebStrom\encirclement-gameDemo\Pic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PrjFloder\WebStrom\encirclement-gameDemo\Pic" />
       <recent name="E:\PrjFloder\WebStrom\encirclement-gameDemo\JS" />
@@ -244,49 +301,122 @@
       <workItem from="1463363674201" duration="73000" />
       <workItem from="1463363782401" duration="16846000" />
       <workItem from="1463446775480" duration="529000" />
-      <workItem from="1463452944518" duration="14950000" />
+      <workItem from="1463452944518" duration="15549000" />
+      <workItem from="1463533185329" duration="1199000" />
+      <workItem from="1463552313427" duration="4562000" />
+      <workItem from="1463638068880" duration="6781000" />
+      <workItem from="1463651778055" duration="471000" />
+      <workItem from="1463716390415" duration="14080000" />
+      <workItem from="1463966727430" duration="17127000" />
+      <workItem from="1464052083737" duration="19699000" />
+      <workItem from="1464083335913" duration="727000" />
+      <workItem from="1464141739035" duration="13937000" />
+      <workItem from="1464224662869" duration="1252000" />
+      <workItem from="1464228596146" duration="20302000" />
+      <workItem from="1464318489297" duration="20155000" />
+      <workItem from="1464347279273" duration="1426000" />
+      <workItem from="1464575283840" duration="16646000" />
+      <workItem from="1464657917818" duration="10088000" />
+      <workItem from="1464748349661" duration="14252000" />
+      <workItem from="1464930435071" duration="193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60466000" />
+    <option name="totallyTimeSpent" value="223962000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="860" extended-state="1" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15121256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14950635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="621">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3634">
+          <caret line="437" column="99" selection-start-line="437" selection-start-column="99" selection-end-line="437" selection-end-column="99" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/FindPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -297,15 +427,332 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/FindPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3841">
+          <caret line="369" column="32" selection-start-line="369" selection-start-column="32" selection-end-line="369" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/FindPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3841">
+          <caret line="369" column="32" selection-start-line="369" selection-start-column="32" selection-end-line="369" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/FindPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -324,15 +771,68 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
+            <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -351,15 +851,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -378,15 +891,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -405,15 +931,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -432,15 +971,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -459,15 +1011,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -483,14 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/Tween.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -498,15 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2691">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/three.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="21225" column="18" selection-start-line="21225" selection-start-column="9" selection-end-line="21225" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -522,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,33 +1076,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/Tween.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5796">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/FindPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45205">
+          <caret line="4704" column="0" selection-start-line="4704" selection-start-column="0" selection-end-line="4704" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pic/wood-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33408" column="11" selection-start-line="33408" selection-start-column="11" selection-end-line="33408" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/myCSS" />
+    <entry file="file://$PROJECT_DIR$/CSS/myStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        <state relative-caret-position="365">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/encirclement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="354" column="5" selection-start-line="354" selection-start-column="5" selection-end-line="354" selection-end-column="5" />
+        <state relative-caret-position="5106">
+          <caret line="409" column="25" selection-start-line="409" selection-start-column="25" selection-end-line="409" selection-end-column="25" />
           <folding>
             <element signature="n#!!block;n#createLights#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="n#!!block;n#createChessBoard#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#4094#6053#0" expanded="false" />
+            <element signature="e#3728#4127#0" expanded="false" />
+            <element signature="e#4185#4482#0" expanded="false" />
+            <element signature="e#4520#4817#0" expanded="false" />
+            <element signature="e#4973#5102#0" expanded="false" />
+            <element signature="e#5157#7116#0" expanded="false" />
             <element signature="n#!!block;n#getCheck#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getMidGap#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getCharacter#0;n#!!block;n#init#0" expanded="false" />
             <element signature="n#!!block;n#getObstacle#0;n#!!block;n#init#0" expanded="false" />
-            <element signature="e#10043#11531#0" expanded="false" />
-            <element signature="e#11655#13587#0" expanded="false" />
+            <element signature="e#9603#9840#0" expanded="false" />
+            <element signature="n#!!block;n#getDecorate#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#createListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#removeListener#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="n#!!block;n#onDocumentMouseMove#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#11830#13129#0" expanded="false" />
+            <element signature="e#16144#17027#0" expanded="false" />
+            <element signature="e#17240#18015#0" expanded="false" />
+            <element signature="e#19924#20410#0" expanded="false" />
+            <element signature="e#20465#20939#0" expanded="false" />
+            <element signature="n#!!block;n#addObs#0;n#!!block;n#init#0" expanded="false" />
+            <element signature="e#21188#22685#0" expanded="false" />
           </folding>
         </state>
       </provider>
